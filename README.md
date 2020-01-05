@@ -8,6 +8,10 @@
 Clone down the repo, run an `npm install` to install dependencies, and then use `npm start` to run the Webpack server. The server will run at `localhost:8080`.
 
 
+
+![Victory Chart with React and Styled Components](./victory-charts.gif)
+
+
 ## Project Structure
 
 I am going to start with an index page that will collect all my diagrams before handing the code over the Webpack:
@@ -180,8 +184,4 @@ class Main extends React.Component {
 const app = document.getElementById('app');
 ReactDOM.render(<Main />, app);
 ```
-
-
-
-![Victory Chart with React and Styled Components](./victory-charts.gif)
 
