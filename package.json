@@ -29,6 +29,7 @@
     "webpack-dev-server": "^3.10.1"
   },
   "dependencies": {
+    "react-css-grid": "^2.0.0-0",
     "victory": "^34.0.0"
   }
 }

@@ -125,3 +125,63 @@ export default BarChart
 
 
 When you start Webpack all of this code is bundled into `dist\bundle.js` (as defined in `webpack.config.js`) and imported as vanilla javascript into `dist\index.html`. This HTML file is then served to your browser on `localhost:8080`.
+
+
+## Styled Components
+
+When you start adding more [Victory Examples](https://formidable.com/open-source/victory/gallery/) you probably want to add some styling. A quick way to add a grid is [react-css-grid](https://github.com/jxnblk/react-css-grid):
+
+
+```bash
+npm install react-css-grid
+```
+
+
+All you have to do is to wrap the Grid component around your charts and define the column and gap size size:
+
+
+`src\js\index.js`
+
+```js
+import React from 'react'
+import ReactDOM from 'react-dom'
+import Grid from 'react-css-grid'
+
+import BarChart from './components/barchartDemo.jsx'
+import CircularProgress from './components/circularProgressDemo.jsx'
+import ZoomChart from './components/zoomChartDemo.jsx'
+import CircularTooltip from './components/circularTooltip.jsx'
+import MultiDepChart from './components/multipleDependencyChartDemo.jsx'
+import MultiTooltipChart from './components/multipointTooltipDemo.jsx'
+import ParalellBrushChart from './components/paralellBrushDemo.jsx'
+import CentralAxisChart from './components/centralAxisDemo.jsx'
+import GroupedTooltipChart from './components/groupedTooltipsDemo.jsx'
+
+class Main extends React.Component {
+  render() {
+    return (
+      <Grid
+        width={320}
+        gap={24}>
+        <BarChart />
+        <CircularProgress />
+        <ZoomChart />
+        <CircularTooltip />
+        <MultiDepChart />
+        <MultiTooltipChart />
+        <ParalellBrushChart />
+        <CentralAxisChart />
+        <GroupedTooltipChart />
+      </Grid>
+    );
+  }
+}
+
+const app = document.getElementById('app');
+ReactDOM.render(<Main />, app);
+```
+
+
+
+![Victory Chart with React and Styled Components](./victory-charts.gif)
+
