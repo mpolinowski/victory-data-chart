@@ -1,7 +1,7 @@
 {
-  "name": "victory-tutorial",
+  "name": "victory-data-chart",
   "version": "1.0.0",
-  "description": "A tutorial for Victory used with the Getting Started guide in Victory Docs.",
+  "description": "React.js components for modular charting and data visualization.",
   "main": "webpack.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/FormidableLabs/victory-tutorial.git"
+    "url": "git+https://github.com/mpolinowski/victory-data-chart.git"
   },
-  "author": "emma.brillhart@formidable.com",
+  "author": "mpolinowski@gmail.com",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/FormidableLabs/victory-tutorial/issues"
+    "url": "https://github.com/mpolinowski/victory-data-chart/issues"
   },
-  "homepage": "https://github.com/FormidableLabs/victory-tutorial#readme",
+  "homepage": "https://github.com/mpolinowski/victory-data-chart#readme",
   "devDependencies": {
     "@babel/core": "^7.7.7",
     "@babel/preset-env": "^7.7.7",
